@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tr.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div>
+                    <input id="inputme" type="text" placeholder="Calculator" name="display">
+                </div>
+                <div>
+                    <input type="button" value="C" onclick="display.value = display.value.toString().slice(0,-11)" id="buttonsC " class="opretorS">
+                    <input type="button" value="%" onclick="display.value += '%'" id="buttons% " class="opretorS">
+                    <input type="button" value="%" onclick="display.value += '%'" id="buttons% " class="opretorS">
+                    <input type="button" value="/" onclick="display.value += '/'" id="buttons/ opretor">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'" id="buttons7 bNumber">
+                    <input type="button" value="8" onclick="display.value += '8'" id="buttons8 bNumber">
+                    <input type="button" value="9" onclick="display.value += '9'" id="buttons9 bNumber">
+                    <input type="button" value="*" onclick="display.value += '*'" id="buttons* opretor">
+
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'" id="buttons4 bNumber">
+                    <input type="button" value="5" onclick="display.value += '5'" id="buttons5 bNumber">
+                    <input type="button" value="6" onclick="display.value += '6'" id="buttons6 bNumber1">
+                    <input type="button" value="-" onclick="display.value += '-'" id="buttons- opretor">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'" id="buttons1 bNumber">
+                    <input type="button" value="2" onclick="display.value += '2'" id="buttons2 bNumber">
+                    <input type="button" value="3" onclick="display.value += '3'" id="buttons3 bNumber">
+                    <input type="button" value="+" onclick="display.value += '+'" id="buttons+ opretor">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="display.value += '0'" id="buttons0 bNumber">
+                    <input type="button" value="." onclick="display.value += '.'" id="buttons. opretoPr">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" id="buttons= opretor">
+
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="tr.js"></script>
+</body>
+
+</html>
