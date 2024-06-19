@@ -1,1 +1,1 @@
-https://de-faked.github.io/weather-html/
+https://de-faked.github.io/weather-html/main.html
