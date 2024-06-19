@@ -10,6 +10,9 @@ async function getWeather() {
     let H = currentTime.getHours();
     let M = currentTime.getMinutes();
     let S = currentTime.getSeconds();
+    H = H < 10 ? '0' + H: H;
+    M = M < 10 ? '0' + M: M;
+    S = S < 10 ? '0' + S: S;
     date.innerHTML = `${H}:${M}:${S}`;
   }, 1000);
 
@@ -18,8 +21,11 @@ async function getWeather() {
   );
   Weather = await responce.json();
   city.innerHTML = Weather.name;
-  current.innerHTML = Weather.main.temp;
-  high.innerHTML = "high: " + Weather.main.temp_max;
-  low.innerHTML = "low: " + Weather.main.temp_min;
+  let changeWeather = Weather.main.temp - 273.15;
+  current.innerHTML = changeWeather + "c";
+  let Heigh = Weather.main.temp_max - 273.15;
+  high.innerHTML = "high: " + Heigh + "c";
+  let Low = Weather.main.temp_min - 273.15
+  low.innerHTML = "low: " + Low + "c";
 }
 getWeather();
