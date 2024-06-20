@@ -21,7 +21,7 @@
   .weather{
     background-color: rgb(18, 19, 19);
     position: relative;
-    height: 275px;
+    height: 375px;
     width: 400px;
     border-radius: 10px;
     top:calc(50% - 125px);
@@ -116,6 +116,12 @@
   .spin {
     animation: spin 60s linear infinite,
       glow 10s linear infinite;
+  }
+  #Sunrise{
+    font-size:  10px;
+  }
+  #Sunset{
+    font-size: 10px;
   }
   @keyframes spin{
     100%{
